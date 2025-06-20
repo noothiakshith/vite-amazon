@@ -28,7 +28,7 @@ const usestore = create((set)=>({
         cart:state.cart.map((item)=>item.id===id?{
             ...item,quantity:item.quantity-1
         }:item)
-    })),
+    })),    
     clearcart:()=>set((state)=>({
         cart:[]
     })),
